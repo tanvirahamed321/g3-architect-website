@@ -1,3 +1,8 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
 /* work sans font from google fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
@@ -9,17 +14,29 @@
 /* shared styles */
 
 .btn-primary{
+    width: 180px;
+    height: 64px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    cursor: pointer;
+    border:0;
+    
     
 }
 /* header styles */
 
 header{
+    /* width: 1920px;
+    height: 1322px; */
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 .nav-title{
@@ -54,4 +71,33 @@ nav li a{
 }
 .banner-description{
    color: #727272;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media queries */
+/* moblie devices */
+@media screen and (max-width:576px) {
+    header{
+    
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+  
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+    
+        padding: 50px;
+    }
+    
+    nav{
+        flex-direction: column;
+    }
 }
